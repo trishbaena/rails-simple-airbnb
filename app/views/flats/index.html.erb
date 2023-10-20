@@ -1,0 +1,10 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">Simple AirBnB</a>
+  <%= link_to "New flat", new_flat_path, class: "btn btn-outline-primary" %>
+</nav>
+
+<div id="flats">
+  <% @flats.each do |flat| %>
+    <%= render flat %>
+  <% end %>
+</div>

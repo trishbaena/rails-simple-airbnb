@@ -1,0 +1,15 @@
+<div id="<%= dom_id flat %>" style="height: 200px;">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <div class="card-primary">
+        <h5 class="card-title"><%= flat.name %></h5>
+        <h6 class="card-subtitle mb-2 text-muted"><%= flat.address %></h6>
+        <i class="fa-solid fa-users"></i> <%= flat.number_of_guests %>
+        <i class="fa-solid fa-dollar-sign"></i> <%= flat.price_per_night %>
+      </div>
+      <div class="card-header">
+        <%= link_to "Show this flat", flat %>
+      </div>
+    </div>
+  </div>
+</div>
